@@ -1,41 +1,397 @@
-# Compiled Lua sources
-luac.out
+--[[
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+]]
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+-- Instances
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+local Vanity = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SideFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Head = Instance.new("Folder")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Button = Instance.new("TextButton")
+local Aimbot = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Button_2 = Instance.new("TextButton")
+local Aimbot_2 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Button_3 = Instance.new("TextButton")
+local Aimbot_3 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Button_4 = Instance.new("TextButton")
+local Aimbot_4 = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local Button_5 = Instance.new("TextButton")
+local Aimbot_5 = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local Containers = Instance.new("Frame")
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+-- Properties
 
+Vanity.Name = "Vanity"
+Vanity.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Vanity.Enabled = false
+Vanity.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Vanity.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Vanity
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+MainFrame.BackgroundTransparency = 0.30000001192092896
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.490639627, 0, 0.5, 0)
+
+UICorner.Parent = MainFrame
+UICorner.CornerRadius = UDim.new(0, 4)
+
+SideFrame.Name = "SideFrame"
+SideFrame.Parent = MainFrame
+SideFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+SideFrame.BackgroundTransparency = 0.30000001192092896
+SideFrame.BorderColor3 = Color3.new(0, 0, 0)
+SideFrame.BorderSizePixel = 0
+SideFrame.ClipsDescendants = true
+SideFrame.Size = UDim2.new(0, 147, 0, 300)
+
+UICorner_2.Parent = SideFrame
+UICorner_2.CornerRadius = UDim.new(0, 4)
+
+Head.Name = "Head"
+Head.Parent = SideFrame
+
+ImageLabel.Parent = Head
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.510690689, 0, -0.226666659, 0)
+ImageLabel.Size = UDim2.new(0, 200, 0, 200)
+ImageLabel.Image = "rbxassetid://13918009227"
+ImageLabel.ScaleType = Enum.ScaleType.Crop
+
+TextLabel.Parent = Head
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.256681442, 0, 0.0299999993, 0)
+TextLabel.Size = UDim2.new(0, 107, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Vanity Cheats"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 20
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Head
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.368219376, 0, 0.0933333337, 0)
+TextLabel_2.Size = UDim2.new(0, 80, 0, 29)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Premium Version"
+TextLabel_2.TextColor3 = Color3.new(0.513726, 0.513726, 0.513726)
+TextLabel_2.TextSize = 13
+TextLabel_2.TextWrapped = true
+
+ScrollingFrame.Parent = SideFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.222999975, 0)
+ScrollingFrame.Size = UDim2.new(0, 147, 0, 233)
+ScrollingFrame.ScrollBarThickness = 4
+
+Button.Name = "Button"
+Button.Parent = ScrollingFrame
+Button.BackgroundColor3 = Color3.new(1, 1, 1)
+Button.BackgroundTransparency = 1
+Button.BorderColor3 = Color3.new(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.ClipsDescendants = true
+Button.Position = UDim2.new(0, 0, 0.223333329, 0)
+Button.Size = UDim2.new(0, 177, 0, 50)
+Button.Font = Enum.Font.SourceSans
+Button.TextColor3 = Color3.new(0, 0, 0)
+Button.TextSize = 14
+Button.TextTransparency = 1
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Button
+Aimbot.BackgroundColor3 = Color3.new(1, 1, 1)
+Aimbot.BorderColor3 = Color3.new(0, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Size = UDim2.new(0, 177, 0, 50)
+
+TextLabel_3.Parent = Aimbot
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.282485873, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 127, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Profile"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 14
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_2.Parent = Aimbot
+ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_2.BackgroundTransparency = 1
+ImageLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0, 0, 0.119999997, 0)
+ImageLabel_2.Size = UDim2.new(0, 50, 0, 38)
+ImageLabel_2.Image = "rbxassetid://13949529081"
+
+Button_2.Name = "Button"
+Button_2.Parent = ScrollingFrame
+Button_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_2.BackgroundTransparency = 1
+Button_2.BorderColor3 = Color3.new(0, 0, 0)
+Button_2.BorderSizePixel = 0
+Button_2.ClipsDescendants = true
+Button_2.Position = UDim2.new(0, 0, 0.223333329, 0)
+Button_2.Size = UDim2.new(0, 177, 0, 50)
+Button_2.Font = Enum.Font.SourceSans
+Button_2.TextColor3 = Color3.new(0, 0, 0)
+Button_2.TextSize = 14
+Button_2.TextTransparency = 1
+
+Aimbot_2.Name = "Aimbot"
+Aimbot_2.Parent = Button_2
+Aimbot_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Aimbot_2.BorderColor3 = Color3.new(0, 0, 0)
+Aimbot_2.BorderSizePixel = 0
+Aimbot_2.Size = UDim2.new(0, 177, 0, 50)
+
+TextLabel_4.Parent = Aimbot_2
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.282485873, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 127, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Misc"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 14
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_3.Parent = Aimbot_2
+ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_3.BackgroundTransparency = 1
+ImageLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0, 0, 0.119999997, 0)
+ImageLabel_3.Size = UDim2.new(0, 50, 0, 38)
+ImageLabel_3.Image = "rbxassetid://13949529081"
+
+Button_3.Name = "Button"
+Button_3.Parent = ScrollingFrame
+Button_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_3.BackgroundTransparency = 1
+Button_3.BorderColor3 = Color3.new(0, 0, 0)
+Button_3.BorderSizePixel = 0
+Button_3.ClipsDescendants = true
+Button_3.Position = UDim2.new(0, 0, 0.223333329, 0)
+Button_3.Size = UDim2.new(0, 177, 0, 50)
+Button_3.Font = Enum.Font.SourceSans
+Button_3.TextColor3 = Color3.new(0, 0, 0)
+Button_3.TextSize = 14
+Button_3.TextTransparency = 1
+
+Aimbot_3.Name = "Aimbot"
+Aimbot_3.Parent = Button_3
+Aimbot_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Aimbot_3.BorderColor3 = Color3.new(0, 0, 0)
+Aimbot_3.BorderSizePixel = 0
+Aimbot_3.Size = UDim2.new(0, 177, 0, 50)
+
+TextLabel_5.Parent = Aimbot_3
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.282485873, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 127, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Visuals"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 14
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_4.Parent = Aimbot_3
+ImageLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_4.BackgroundTransparency = 1
+ImageLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0, 0, 0.119999997, 0)
+ImageLabel_4.Size = UDim2.new(0, 50, 0, 38)
+ImageLabel_4.Image = "rbxassetid://13949529081"
+
+Button_4.Name = "Button"
+Button_4.Parent = ScrollingFrame
+Button_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_4.BackgroundTransparency = 1
+Button_4.BorderColor3 = Color3.new(0, 0, 0)
+Button_4.BorderSizePixel = 0
+Button_4.ClipsDescendants = true
+Button_4.Position = UDim2.new(0, 0, 0.223333329, 0)
+Button_4.Size = UDim2.new(0, 177, 0, 50)
+Button_4.Font = Enum.Font.SourceSans
+Button_4.TextColor3 = Color3.new(0, 0, 0)
+Button_4.TextSize = 14
+Button_4.TextTransparency = 1
+
+Aimbot_4.Name = "Aimbot"
+Aimbot_4.Parent = Button_4
+Aimbot_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Aimbot_4.BorderColor3 = Color3.new(0, 0, 0)
+Aimbot_4.BorderSizePixel = 0
+Aimbot_4.Size = UDim2.new(0, 177, 0, 50)
+
+TextLabel_6.Parent = Aimbot_4
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.282485873, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 127, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Aimbot"
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextSize = 14
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_5.Parent = Aimbot_4
+ImageLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_5.BackgroundTransparency = 1
+ImageLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0, 0, 0.119999997, 0)
+ImageLabel_5.Size = UDim2.new(0, 50, 0, 38)
+ImageLabel_5.Image = "rbxassetid://13949529081"
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Button_5.Name = "Button"
+Button_5.Parent = ScrollingFrame
+Button_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Button_5.BackgroundTransparency = 1
+Button_5.BorderColor3 = Color3.new(0, 0, 0)
+Button_5.BorderSizePixel = 0
+Button_5.ClipsDescendants = true
+Button_5.Position = UDim2.new(0, 0, 0.223333329, 0)
+Button_5.Size = UDim2.new(0, 177, 0, 50)
+Button_5.Font = Enum.Font.SourceSans
+Button_5.TextColor3 = Color3.new(0, 0, 0)
+Button_5.TextSize = 14
+Button_5.TextTransparency = 1
+
+Aimbot_5.Name = "Aimbot"
+Aimbot_5.Parent = Button_5
+Aimbot_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Aimbot_5.BorderColor3 = Color3.new(0, 0, 0)
+Aimbot_5.BorderSizePixel = 0
+Aimbot_5.Size = UDim2.new(0, 177, 0, 50)
+
+TextLabel_7.Parent = Aimbot_5
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.282485873, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 127, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Configs"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextSize = 14
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_6.Parent = Aimbot_5
+ImageLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_6.BackgroundTransparency = 1
+ImageLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_6.BorderSizePixel = 0
+ImageLabel_6.Position = UDim2.new(0, 0, 0.119999997, 0)
+ImageLabel_6.Size = UDim2.new(0, 50, 0, 38)
+ImageLabel_6.Image = "rbxassetid://13949529081"
+
+Containers.Name = "Containers"
+Containers.Parent = MainFrame
+Containers.BackgroundColor3 = Color3.new(1, 1, 1)
+Containers.BackgroundTransparency = 1
+Containers.BorderColor3 = Color3.new(0, 0, 0)
+Containers.BorderSizePixel = 0
+Containers.ClipsDescendants = true
+Containers.Position = UDim2.new(0.263837636, 0, 0, 0)
+Containers.Size = UDim2.new(0, 399, 0, 300)
+
+-- Scripts
+
+local function WTXGQD_fake_script() -- MainFrame.Dragify 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(WTXGQD_fake_script)()
