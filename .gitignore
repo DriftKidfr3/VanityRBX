@@ -395,3 +395,5 @@ local function WTXGQD_fake_script() -- MainFrame.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(WTXGQD_fake_script)()
+
+game:GetService("StarterGui").Vanity.MainFrame:TweenSize(UDim2.new(0, 542,0, 300))
