@@ -58,6 +58,7 @@ MainFrame.BackgroundTransparency = 0.30000001192092896
 MainFrame.BorderColor3 = Color3.new(0, 0, 0)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.490639627, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 542,0, 300)
 
 UICorner.Parent = MainFrame
 UICorner.CornerRadius = UDim.new(0, 4)
@@ -395,5 +396,3 @@ local function WTXGQD_fake_script() -- MainFrame.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(WTXGQD_fake_script)()
-
-MainFrame:TweenSize(UDim2.new(0, 542,0, 300))
